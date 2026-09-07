@@ -6,7 +6,7 @@ on:
       - "main"
 
 env:
-  DOCKERHUB_USERNAME: lyzhang1999
+   GAR_REPO: asia-east1-docker.pkg.dev/alang-test-503309/eric-repo
 
 jobs:
   docker:
