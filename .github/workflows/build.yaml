@@ -24,7 +24,8 @@ jobs:
       - name: Login to Google Artifact Registry
         uses: docker/login-action@v2
         with:
-          username: asia-east1-docker.pkg.dev
+          registry: asia-east1-docker.pkg.dev
+          username: _json_key
           password: ${{ secrets.GCP_SA_KEY }}
       - name: Build backend and push
         uses: docker/build-push-action@v3
