@@ -32,7 +32,7 @@ jobs:
         with:
           context: backend
           push: true
-          platforms: linux/amd64,linux/arm64
+          platforms: linux/amd64
           tags: ${{ env.GAR_REPO }}/backend:${{ steps.vars.outputs.sha_short }}
       - name: Build frontend and push
         uses: docker/build-push-action@v3
